@@ -1,0 +1,59 @@
+Mannys-Cloud
+
+Project Overview:
+A cloud-based file management system that enables users to securely upload, organize, and share files.
+The backend is powered by ASP.NET Core Web API, the frontend is built with React + TypeScript, 
+and storage/processing is handled via Azure cloud services.
+
+
+Functional Requirements:
+1. User Authentication & Authorization
+	- Register/login user accounts
+	- Role-based access (Admin, User)
+2. File Management
+	- Upload/download files (documents, images, videos)
+	- Organize files into folders/categories
+	- File metadata: size, type, upload date, owner
+3. File Sharing & Permissions
+	- Share files with other users (link or external access)
+	- Control permissions (read, write, delete)
+4. Search & Filtering
+	- Search files by name, type, or metadata
+	- Filter by date uploaded, owner, or tags
+5. Audit & Logging
+	- Track user activity (uploads, downloads, deletes)
+	- Monitor failed/successful logins
+
+
+Non-functional Requirements:
+	Scalability -> Handle growth in number of users and files
+	Performance -> Fast uploads/downloads using Azure CDN + Blob Storage
+	Security -> Encryption at rest and in transit, RBAC, token-based access
+	Reliability -> 99.9% uptime via Azure App Services
+	CI/CD -> Automated builds/deployments using GitHub Actions
+	Monitoring -> Use Application Insights + Azure Monitor
+
+
+Project Scope:
+	- File upload/download with blob storage
+	- Authentication/authorization
+	- Web UI with React + TypeScript
+	- API with ASP.NET Core (RESTful)
+	- CI/CD deployment to Azure App Services
+	- Logging, monitoring, and metrics.
+
+
+High-Level Architecture:
+1. Frontend (React + TypeScript)
+	- Provides UI for login, file upload/download, browsing
+	- Communicates with backend via REST API
+2. Backend (ASP.NET Core Web API)
+	- Authentication/authorization
+	- File metadata management
+	- Exposes endpoints for CRUD operations
+	- Handles role-based access
+3. Azure Services
+	- Azure Blob Storage -> File storage
+	- Azure App Services -> Hosts the Web API + React frontend
+	- Azure SQL Database -> Store user data + file metadata
+
