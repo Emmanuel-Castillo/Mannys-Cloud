@@ -63,7 +63,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", (string)null);
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.Folder", b =>
@@ -81,7 +81,7 @@ namespace Mannys_Cloud_Backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ParentFolderId")
+                    b.Property<int?>("ParentFolderId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -93,7 +93,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Folders");
+                    b.ToTable("Folders", (string)null);
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.User", b =>
@@ -121,7 +121,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.File", b =>
@@ -148,8 +148,7 @@ namespace Mannys_Cloud_Backend.Migrations
                     b.HasOne("Mannys_Cloud_Backend.Models.Folder", "ParentFolder")
                         .WithMany("ChildFolders")
                         .HasForeignKey("ParentFolderId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Mannys_Cloud_Backend.Models.User", "User")
                         .WithMany("UserFolders")

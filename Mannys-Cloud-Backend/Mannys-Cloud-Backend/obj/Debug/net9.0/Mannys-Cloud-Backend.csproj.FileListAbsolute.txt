@@ -167,3 +167,7 @@ C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-B
 C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\obj\Debug\net9.0\Mannys-Cloud-Backend.sourcelink.json
+C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\Azure.Storage.Blobs.dll
+C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\Azure.Storage.Common.dll
+C:\Users\emman\OneDrive\Desktop\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\bin\Debug\net9.0\System.IO.Hashing.dll

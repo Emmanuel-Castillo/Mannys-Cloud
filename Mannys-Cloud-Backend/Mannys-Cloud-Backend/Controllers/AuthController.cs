@@ -43,8 +43,12 @@ namespace Mannys_Cloud_Backend.Controllers
                     return Forbid("Email already registered.");
 
                 var newUser = new User { FullName = request.FullName, Email = request.Email, PasswordHash = _passwordService.HashPassword(request.Password) };
-
                 _context.Users.Add(newUser);
+
+                // Create root folder for user
+                var newFolder = new Folder { UserId = newUser.UserId, FolderName = "root" };
+                _context.Folders.Add(newFolder);
+
                 await _context.SaveChangesAsync();
 
                 return Ok("Registration completed");

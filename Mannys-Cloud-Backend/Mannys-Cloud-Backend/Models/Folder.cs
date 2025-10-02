@@ -12,9 +12,9 @@ namespace Mannys_Cloud_Backend.Models
         public required string FolderName { get; set; }
 
         [ForeignKey("Folder")]
-        public int ParentFolderId { get; set; }
+        public int? ParentFolderId { get; set; }
 
-        public required DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         // Navigation
         public User User { get; set; } = null!;
