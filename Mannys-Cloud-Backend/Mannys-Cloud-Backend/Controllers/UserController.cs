@@ -1,8 +1,11 @@
 ﻿using Mannys_Cloud_Backend.Data;
 using Mannys_Cloud_Backend.DTO.Requests;
+using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
 
 namespace Mannys_Cloud_Backend.Controllers
@@ -13,32 +16,39 @@ namespace Mannys_Cloud_Backend.Controllers
     {
 
         private readonly ApplicationDbContext _context;
+        private readonly ConvertDto _convertDto;
 
-        public UserController(ApplicationDbContext context)
+        public UserController(ApplicationDbContext context, ConvertDto convertDto)
         {
             _context = context;
+            _convertDto = convertDto;
         }
 
         [HttpGet("{id}")]
         [Authorize]
-        public async Task<IActionResult> GetUser(int id) {
+        public async Task<IActionResult> GetUser(int id)
+        {
 
-            try { 
+            try
+            {
                 var user = await _context.Users.FindAsync(id);
                 if (user == null) return NotFound();
 
                 return Ok(new { user.UserId, user.FullName, user.Email, user.UserFiles, user.UserFolders });
             }
-            catch (Exception ex) { 
+            catch (Exception ex)
+            {
                 return BadRequest(ex.Message);
-            }    
+            }
         }
 
         [HttpPut("{id}")]
         [Authorize]
-        public async Task<IActionResult> UpdateUser(int id, UpdateUserRequest request) {
-            try { 
-                
+        public async Task<IActionResult> UpdateUser(int id, UpdateUserRequest request)
+        {
+            try
+            {
+
                 // Validate request
                 if (string.IsNullOrEmpty(request.NewFullName) && string.IsNullOrEmpty(request.NewEmail))
                 {
@@ -70,7 +80,8 @@ namespace Mannys_Cloud_Backend.Controllers
 
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> DeleteUser(int id) {
+        public async Task<IActionResult> DeleteUser(int id)
+        {
 
             var user = await _context.Users.FindAsync(id);
             if (user == null) return NotFound();
@@ -79,6 +90,28 @@ namespace Mannys_Cloud_Backend.Controllers
             await _context.SaveChangesAsync();
 
             return Ok("User deleted.");
+        }
+
+        [HttpGet("root")]
+        [Authorize]
+        public async Task<IActionResult> GetUserRootFolder()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var rootFolder = await _context.Folders.Include(f => f.FolderFiles).Include(f => f.ChildFolders).FirstAsync(f => f.IsRootFolder && f.UserId == int.Parse(userId));
+                if (rootFolder == null) return NotFound();
+
+                var rootFolderDto = _convertDto.ConvertToFolderDto(rootFolder);
+
+                return Ok(new { message = "Root folder retrieved.", folder = rootFolderDto });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

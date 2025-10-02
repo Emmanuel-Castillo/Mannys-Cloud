@@ -11,10 +11,14 @@ namespace Mannys_Cloud_Backend.Models
 
         public required string FolderName { get; set; }
 
+        public bool IsRootFolder { get; set; }
+
         [ForeignKey("Folder")]
         public int? ParentFolderId { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public bool IsDeleted { get; set; } = false;
 
         // Navigation
         public User User { get; set; } = null!;

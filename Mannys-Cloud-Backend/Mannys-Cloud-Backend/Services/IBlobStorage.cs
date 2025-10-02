@@ -9,5 +9,7 @@
         public Task UndeleteFileAsync(string blobName);
 
         public Task<Stream> DownloadFileAsync(string blobName);
+
+        public Task DeleteFolderAsync(string folderPath);
     }
 }

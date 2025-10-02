@@ -1,5 +1,6 @@
 ﻿
 using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 
 namespace Mannys_Cloud_Backend.Services
 {
@@ -25,6 +26,18 @@ namespace Mannys_Cloud_Backend.Services
 
             // Delete the Blob
             await blobStorageClient.DeleteIfExistsAsync();
+        }
+
+        public async Task DeleteFolderAsync(string folderPath)
+        {
+            // Grab list of blobs using prefix: folderPath
+            var blobItemsToDelete = _blobContainerClient.GetBlobsAsync(prefix: folderPath);
+
+            await foreach (BlobItem blobItem in blobItemsToDelete)
+            {
+                BlobClient blobClient = _blobContainerClient.GetBlobClient(blobItem.Name);
+                await blobClient.DeleteIfExistsAsync();
+            }
         }
 
         public async Task<Stream> DownloadFileAsync(string blobName)

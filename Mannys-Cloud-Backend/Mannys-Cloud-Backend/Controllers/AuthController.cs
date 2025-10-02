@@ -46,7 +46,7 @@ namespace Mannys_Cloud_Backend.Controllers
                 _context.Users.Add(newUser);
 
                 // Create root folder for user
-                var newFolder = new Folder { UserId = newUser.UserId, FolderName = "root" };
+                var newFolder = new Folder { UserId = newUser.UserId, FolderName = "root", IsRootFolder = true };
                 _context.Folders.Add(newFolder);
 
                 await _context.SaveChangesAsync();

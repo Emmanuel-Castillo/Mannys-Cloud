@@ -122,6 +122,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "GetFolders",
+    "RelativePath": "api/Folder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "AddFolder",
+    "RelativePath": "api/Folder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Mannys_Cloud_Backend.DTO.Requests.AddFolderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "GetFolder",
+    "RelativePath": "api/Folder/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "DeleteFolder",
+    "RelativePath": "api/Folder/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.UserController",
     "Method": "GetUser",
     "RelativePath": "api/User/{id}",
@@ -172,6 +230,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.UserController",
+    "Method": "GetUserRootFolder",
+    "RelativePath": "api/User/root",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

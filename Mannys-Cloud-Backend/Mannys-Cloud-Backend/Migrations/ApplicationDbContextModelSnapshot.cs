@@ -48,8 +48,8 @@ namespace Mannys_Cloud_Backend.Migrations
                     b.Property<int>("FolderId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IsDeleted")
-                        .HasColumnType("int");
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<int>("SizeBytes")
                         .HasColumnType("int");
@@ -63,7 +63,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Files", (string)null);
+                    b.ToTable("Files");
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.Folder", b =>
@@ -81,6 +81,12 @@ namespace Mannys_Cloud_Backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRootFolder")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("ParentFolderId")
                         .HasColumnType("int");
 
@@ -93,7 +99,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Folders", (string)null);
+                    b.ToTable("Folders");
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.User", b =>
@@ -121,7 +127,7 @@ namespace Mannys_Cloud_Backend.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Mannys_Cloud_Backend.Models.File", b =>

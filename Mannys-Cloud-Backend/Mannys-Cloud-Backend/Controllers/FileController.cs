@@ -1,6 +1,7 @@
 ﻿using Mannys_Cloud_Backend.Data;
 using Mannys_Cloud_Backend.DTO.Requests;
 using Mannys_Cloud_Backend.Services;
+using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,11 +14,13 @@ namespace Mannys_Cloud_Backend.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IBlobStorage _blobStorage;
+        private readonly ConvertDto _convertDto;
 
-        public FileController(ApplicationDbContext context, IBlobStorage bloblStorage)
+        public FileController(ApplicationDbContext context, IBlobStorage bloblStorage, ConvertDto convertDto)
         {
             _context = context;
             _blobStorage = bloblStorage;
+            _convertDto = convertDto;
         }
 
         [HttpGet("{id}")]
@@ -29,7 +32,9 @@ namespace Mannys_Cloud_Backend.Controllers
                 var file = await _context.Files.FindAsync(id);
                 if (file == null) return NotFound();
 
-                return Ok(file);
+                var fileDto = _convertDto.ConvertToFileDto(file);
+
+                return Ok(new {message = "File retrieved.", file = fileDto });
             }
             catch (Exception ex)
             {
@@ -78,7 +83,7 @@ namespace Mannys_Cloud_Backend.Controllers
 
                 await _blobStorage.DeleteFileAsync(file.BlobPath);
 
-                file.IsDeleted = 1;
+                file.IsDeleted = true;
                 await _context.SaveChangesAsync();
                 return Ok(new { message = "File successfully deleted." });
             }
@@ -95,7 +100,7 @@ namespace Mannys_Cloud_Backend.Controllers
                 if (file == null) return NotFound();
 
                 await _blobStorage.UndeleteFileAsync(file.BlobPath);
-                file.IsDeleted = 1;
+                file.IsDeleted = false;
 
                 await _context.SaveChangesAsync();
                 return Ok(new { message = "File successfully restored." });

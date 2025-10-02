@@ -22,7 +22,7 @@ namespace Mannys_Cloud_Backend.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-        public int IsDeleted { get; set; } = 0;
+        public bool IsDeleted { get; set; } = false;
 
         // Navigation
         public User User { get; set; } = null!;

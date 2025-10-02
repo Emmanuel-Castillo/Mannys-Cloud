@@ -1,6 +1,7 @@
 using Azure.Storage.Blobs;
 using Mannys_Cloud_Backend.Data;
 using Mannys_Cloud_Backend.Services;
+using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -14,6 +15,8 @@ var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddScoped<ConvertDto>();
+builder.Services.AddScoped<BuildPath>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
