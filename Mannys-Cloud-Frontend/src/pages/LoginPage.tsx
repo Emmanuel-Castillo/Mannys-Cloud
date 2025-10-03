@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import type { AuthCredentials, AuthState } from "../types/AuthTypes";
 import { useAuth } from "../context/AuthContext";
 

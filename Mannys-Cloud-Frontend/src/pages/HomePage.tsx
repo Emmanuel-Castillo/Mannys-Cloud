@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { type FileDto, type FolderDto } from "../types/ContentTypes";
 import toast from "react-hot-toast";
