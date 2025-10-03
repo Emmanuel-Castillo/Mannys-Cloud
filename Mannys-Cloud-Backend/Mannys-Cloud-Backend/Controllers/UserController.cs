@@ -106,7 +106,7 @@ namespace Mannys_Cloud_Backend.Controllers
 
                 var rootFolderDto = _convertDto.ConvertToFolderDto(rootFolder);
 
-                return Ok(new { message = "Root folder retrieved.", folder = rootFolderDto });
+                return Ok(new { success = true, message = "Root folder retrieved.", folder = rootFolderDto });
             }
             catch (Exception ex)
             {

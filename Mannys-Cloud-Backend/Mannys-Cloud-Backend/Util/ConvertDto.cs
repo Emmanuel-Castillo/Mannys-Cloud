@@ -36,5 +36,14 @@ namespace Mannys_Cloud_Backend.Util
                 Files = folder.FolderFiles.Select(f => this.ConvertToFileDto(f)).ToList(),
             };
         }
+
+        public UserDto ConvertToUserDto(User user) {
+            return new UserDto
+            {
+                Email = user.Email,
+                FullName = user.FullName,
+                UserId = user.UserId,
+            };
+        }
     }
 }

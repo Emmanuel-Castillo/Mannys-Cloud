@@ -50,11 +50,11 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var folder = await _context.Folders.Include(f => f.FolderFiles).FirstAsync(f => f.FolderId == id);
+                var folder = await _context.Folders.Include(f => f.FolderFiles).Include(f => f.ChildFolders).FirstAsync(f => f.FolderId == id);
                 if (folder == null) return NotFound();
 
                 var folderDto = _convertDto.ConvertToFolderDto(folder);
-                return Ok(new { message = "Folder successfully retrieved.", folder = folderDto });
+                return Ok(new { success = true, message = "Folder successfully retrieved.", folder = folderDto });
             }
             catch (Exception ex)
             {

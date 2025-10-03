@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\util\\convertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\util\\convertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\models\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\models\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\dto\\folderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\dto\\folderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\dto\\folderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\dto\\folderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\dto\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\dto\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\models\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20251002161258_ChangedDataTypeOfIsDeletedToBool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mannys-Cloud-Backend\\Migrations\\20251002161258_ChangedDataTypeOfIsDeletedToBool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\util\\convertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\util\\convertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\util\\buildpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\services\\blobstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emman\\AppData\\Roaming\\Microsoft\\UserSecrets\\128ce34c-7e10-4741-a37d-d944534dfef7\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -76,10 +68,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\dto\\requests\\addfilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\dto\\requests\\addfilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\dto\\requests\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -152,6 +140,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\migrations\\20251002002050_setcolumnnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\migrations\\20251002002050_setcolumnnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\onedrive\\desktop\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\migrations\\20251002161258_changeddatatypeofisdeletedtobool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\migrations\\20251002161258_changeddatatypeofisdeletedtobool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -161,7 +153,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 48,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -169,93 +161,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Program.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Program.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T18:54:45.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwDAAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T14:57:35.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB8AAAA9AAAAAAAAAA==",
+              "Title": "FileDto.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\FileDto.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\FileDto.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\FileDto.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\DTO\\FileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T22:06:57.204Z",
+              "WhenOpened": "2025-10-02T16:20:33.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
               "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAF4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAwHIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T21:06:58.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FolderController.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T14:58:14.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConvertDto.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAawBcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T16:26:28.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\appsettings.json",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-29T19:28:50.571Z",
               "EditorCaption": ""
             },
             {
@@ -273,20 +200,108 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FileDto.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\FileDto.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\FileDto.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\FileDto.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\DTO\\FileDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T16:20:33.85Z",
+              "WhenOpened": "2025-09-30T14:57:35.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "FolderController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDQAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T14:58:14.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Program.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T18:54:45.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConvertDto.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Util\\ConvertDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T16:26:28.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\User.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T19:15:15.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T18:55:12.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwHYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T22:06:57.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\appsettings.json",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T19:28:50.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "20251002161258_ChangedDataTypeOfIsDeletedToBool.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20251002161258_ChangedDataTypeOfIsDeletedToBool.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20251002161258_ChangedDataTypeOfIsDeletedToBool.cs",
@@ -294,12 +309,11 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Migrations\\20251002161258_ChangedDataTypeOfIsDeletedToBool.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAwwCMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T16:12:59.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T16:12:59.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "BuildPath.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\BuildPath.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Util\\BuildPath.cs",
@@ -307,12 +321,11 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Util\\BuildPath.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T15:47:06.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T15:47:06.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "IBlobStorage.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\IBlobStorage.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\IBlobStorage.cs",
@@ -320,12 +333,11 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Services\\IBlobStorage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T23:09:44.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T23:09:44.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "BlobStorage.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\BlobStorage.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\BlobStorage.cs",
@@ -333,12 +345,11 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Services\\BlobStorage.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T23:12:02.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T23:12:02.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "20251002004100_SetIsDeletedToZeroByDefault.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20251002004100_SetIsDeletedToZeroByDefault.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20251002004100_SetIsDeletedToZeroByDefault.cs",
@@ -350,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 34,
               "Title": "20251002002050_SetColumnNullable.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20251002002050_SetColumnNullable.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20251002002050_SetColumnNullable.cs",
@@ -362,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "AddFileRequest.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\Requests\\AddFileRequest.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\Requests\\AddFileRequest.cs",
@@ -374,20 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\User.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T19:15:15.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\emman\\AppData\\Roaming\\Microsoft\\UserSecrets\\128ce34c-7e10-4741-a37d-d944534dfef7\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\128ce34c-7e10-4741-a37d-d944534dfef7\\secrets.json",
@@ -399,19 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-29T18:55:12.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "UpdateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\Requests\\UpdateUserRequest.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\Requests\\UpdateUserRequest.cs",
@@ -423,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 32,
               "Title": "20250930153411_RemovedRoleInUserTable.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250930153411_RemovedRoleInUserTable.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250930153411_RemovedRoleInUserTable.cs",
@@ -435,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "LoginUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\Requests\\LoginUserRequest.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\Requests\\LoginUserRequest.cs",
@@ -447,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\JwtService.cs",
@@ -459,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "RegisterUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\DTO\\Requests\\RegisterUserRequest.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\DTO\\Requests\\RegisterUserRequest.cs",
@@ -471,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\PasswordService.cs",
@@ -483,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 22,
               "Title": "IPasswordService.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\IPasswordService.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\IPasswordService.cs",
@@ -495,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 23,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\IJwtService.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\IJwtService.cs",
@@ -507,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 24,
               "Title": "Mannys-Cloud-Backend.csproj",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
@@ -519,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 33,
               "Title": "20250930144356_AddedMoreNavigation.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250930144356_AddedMoreNavigation.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250930144356_AddedMoreNavigation.cs",
@@ -531,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "20250929231438_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929231438_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929231438_InitialDatabase.cs",
@@ -543,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 25,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Data\\ApplicationDbContext.cs",
@@ -555,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 28,
               "Title": "20250929230903_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929230903_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929230903_InitialDatabase.cs",
@@ -566,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "20250929231403_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929231403_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929231403_InitialDatabase.cs",
@@ -577,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 29,
               "Title": "20250929230611_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929230611_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929230611_InitialDatabase.cs",
@@ -588,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 30,
               "Title": "20250929230428_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929230428_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929230428_InitialDatabase.cs",
@@ -599,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 31,
               "Title": "20250929224459_InitialDatabase.cs",
               "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Migrations\\20250929224459_InitialDatabase.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Migrations\\20250929224459_InitialDatabase.cs",
@@ -607,38 +593,6 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Migrations\\20250929224459_InitialDatabase.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T22:45:00.041Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 38,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Folder.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\Folder.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Models\\Folder.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\Folder.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Models\\Folder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T22:26:45.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "File.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\File.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Models\\File.cs",
-              "ToolTip": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Models\\File.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Models\\File.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T19:33:29.754Z",
-              "EditorCaption": ""
             }
           ]
         }

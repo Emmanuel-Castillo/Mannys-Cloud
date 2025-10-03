@@ -67,6 +67,18 @@
         }
       }
     },
+    "/api/Auth/check": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/File/{id}": {
       "get": {
         "tags": [

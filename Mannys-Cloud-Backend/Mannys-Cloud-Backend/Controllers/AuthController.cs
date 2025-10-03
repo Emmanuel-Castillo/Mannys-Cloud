@@ -2,9 +2,12 @@
 using Mannys_Cloud_Backend.DTO.Requests;
 using Mannys_Cloud_Backend.Models;
 using Mannys_Cloud_Backend.Services;
+using Mannys_Cloud_Backend.Util;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
 
 namespace Mannys_Cloud_Backend.Controllers
@@ -16,12 +19,14 @@ namespace Mannys_Cloud_Backend.Controllers
         private readonly ApplicationDbContext _context;
         private readonly IJwtService _jwtService;
         private readonly IPasswordService _passwordService;
+        private readonly ConvertDto _convertDto;
 
-        public AuthController(ApplicationDbContext context, IJwtService jwtService, IPasswordService passwordService)
+        public AuthController(ApplicationDbContext context, IJwtService jwtService, IPasswordService passwordService, ConvertDto convertDto)
         {
             _context = context;
             _jwtService = jwtService;
             _passwordService = passwordService;
+            _convertDto = convertDto;
         }
 
         [HttpPost("register")]
@@ -44,14 +49,17 @@ namespace Mannys_Cloud_Backend.Controllers
 
                 var newUser = new User { FullName = request.FullName, Email = request.Email, PasswordHash = _passwordService.HashPassword(request.Password) };
                 _context.Users.Add(newUser);
+                await _context.SaveChangesAsync();
 
                 // Create root folder for user
                 var newFolder = new Folder { UserId = newUser.UserId, FolderName = "root", IsRootFolder = true };
                 _context.Folders.Add(newFolder);
-
                 await _context.SaveChangesAsync();
 
-                return Ok("Registration completed");
+                // Return User data and token
+                var token = _jwtService.GenerateToken(newUser);
+                var userDto = _convertDto.ConvertToUserDto(newUser);
+                return Ok(new { success = true, message = "User successfully registered", userData = userDto, token });
             }
             catch (Exception ex)
             {
@@ -62,7 +70,8 @@ namespace Mannys_Cloud_Backend.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginUserRequest request)
         {
-            try {
+            try
+            {
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
                 if (user == null) return BadRequest("User is not registered with this email.");
 
@@ -70,10 +79,35 @@ namespace Mannys_Cloud_Backend.Controllers
                     return BadRequest("Invalid password");
 
                 var token = _jwtService.GenerateToken(user);
-                return Ok(token);
+                var userDto = _convertDto.ConvertToUserDto(user);
+                return Ok(new { success = true, message = "User successfully logged in", userData = userDto, token });
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 return BadRequest(ex.Message);
             }
         }
-    } }
+
+        [HttpGet("check")]
+        [Authorize]
+        public async Task<IActionResult> CheckAuth()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return NotFound();
+
+                var user = await _context.Users.FindAsync(int.Parse(userId));
+                if (user == null) return NotFound();
+
+                var userDto = _convertDto.ConvertToUserDto(user);
+                return Ok(new { success = true, userData = userDto });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+    }
+}
