@@ -84,7 +84,7 @@ namespace Mannys_Cloud_Backend.Controllers
                 _context.Folders.Add(newFolder);
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = "Folder successfully created." });
+                return Ok(new { success = true,  message = "Folder successfully created." });
             }
             catch (Exception ex) {
                 return BadRequest(ex.Message);

@@ -65,7 +65,7 @@ namespace Mannys_Cloud_Backend.Controllers
                 _context.Files.Add(newFile);
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = "File uploaded successfully", fileId = newFile.FileId });
+                return Ok(new { success = true, message = "File uploaded successfully" });
             }
             catch (Exception ex) { 
                 return BadRequest(ex.Message);

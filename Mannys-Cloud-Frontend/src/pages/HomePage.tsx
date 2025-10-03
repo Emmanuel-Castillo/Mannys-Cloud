@@ -6,6 +6,7 @@ import FolderIcon from "../components/FolderIcon";
 import FileIcon from "../components/FileIcon";
 import LeftArrowIcon from "../components/LeftArrowIcon";
 import ViewFileModal from "../components/ViewFileModal";
+import AddContentModal from "../components/AddContentModal";
 
 const HomePage = () => {
   const { authUser, logout, axios } = useAuth();
@@ -13,13 +14,14 @@ const HomePage = () => {
   const [folders, setFolders] = useState<FolderDto[]>([]);
   const [files, setFiles] = useState<FileDto[]>([]);
 
-  const [viewingFile, setViewingFile] = useState<FileDto>();
+  // Render modal states
+  const [viewingFile, setViewingFile] = useState<FileDto>();                                // ViewFileModal
+  const [addContent, setAddContent] = useState<'folder' | 'file' | false>(false)           // AddContentModal (file/folder/false)
 
   const fetchRootFolderContent = async (folderId?: number) => {
     try {
       const endpoint = folderId ? `/api/folder/${folderId}` : "/api/user/root";
       const { data } = await axios.get(endpoint);
-      console.log(data);
       if (data.success) {
         const rootFolder: FolderDto = data.folder;
 
@@ -54,7 +56,7 @@ const HomePage = () => {
           </button>
         </div>
         <div className="mt-10">
-          <p className="text-2xl mb-3 flex gap-2">
+          <div className="text-2xl mb-3 flex gap-2">
             {currFolder.parentFolderId && (
               <div
                 onClick={() => clickFolderHandler(currFolder.parentFolderId)}
@@ -64,16 +66,13 @@ const HomePage = () => {
               </div>
             )}
             Current folder: {currFolder.folderName}
-          </p>
+          </div>
           <div className="flex">
-            <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer">
+            <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer" onClick={() => setAddContent('folder')}>
               Add folder+
             </span>
-            <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer">
+            <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer" onClick={() => setAddContent('file')}>
               Add file+
-            </span>
-            <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer">
-              Delete
             </span>
             {/* <span className="py-2 px-4 hover:bg-gray-600 cursor-pointer">Rename</span> */}
           </div>
@@ -117,7 +116,8 @@ const HomePage = () => {
           </table>
         </div>
 
-        {viewingFile && <ViewFileModal file={viewingFile} exitModal={() => setViewingFile(undefined)}/>  }
+        {viewingFile && <ViewFileModal file={viewingFile} exitModal={() => setViewingFile(undefined)}/>}
+        {addContent && <AddContentModal userId={authUser.userId} parentFolderId={currFolder.folderId} contentType={addContent} exitModal={() => setAddContent(false)}/>}
       </div>
     )
   );

@@ -50,21 +50,22 @@ export const AuthProvider = ({
     try {
       const { data } = await axios.post(`/api/auth/${state}`, credentials);
       if (data.success) {
-        setAuthUser(data.userData);
-        setToken(data.token);
-        axios.defaults.headers.common["token"] = data.token;
+        axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
         localStorage.setItem("token", data.token);
         toast.success(data.message);
+        setToken(data.token);
+        setAuthUser(data.userData);
       }
     } catch (error: any) {
       toast.error(error.message);
     }
   };
   const logout = async () => {
+    axios.defaults.headers.common["Authorization"] = null;
+    localStorage.removeItem("token")
+    toast.success("Logged out successfully.");
     setToken(null);
     setAuthUser(null);
-    axios.defaults.headers.common["token"] = null;
-    toast.success("Logged out successfully.");
   };
 
   // If token is set, assign it to axios default headers
