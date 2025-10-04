@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'Mannys-Cloud-Backend/**'
+      - '.github/workflows/main_mannyscloudbackend.yml'
   workflow_dispatch:
 
 jobs:
@@ -64,3 +67,4 @@ jobs:
           package: .
 
           
+
