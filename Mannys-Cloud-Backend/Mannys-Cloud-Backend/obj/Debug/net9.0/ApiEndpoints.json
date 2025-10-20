@@ -69,6 +69,28 @@
   },
   {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.FileController",
+    "Method": "DeleteFile",
+    "RelativePath": "api/File",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FileController",
     "Method": "GetFile",
     "RelativePath": "api/File/{id}",
     "HttpMethod": "GET",
@@ -85,7 +107,7 @@
   },
   {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.FileController",
-    "Method": "DeleteFile",
+    "Method": "DeleteSingleFile",
     "RelativePath": "api/File/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -132,6 +154,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FileController",
+    "Method": "DeleteMultipleFiles",
+    "RelativePath": "api/File/multiple",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
     "Method": "GetFolders",
     "RelativePath": "api/Folder",
@@ -159,6 +197,28 @@
   },
   {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "DeleteFolder",
+    "RelativePath": "api/Folder",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
     "Method": "GetFolder",
     "RelativePath": "api/Folder/{id}",
     "HttpMethod": "GET",
@@ -175,7 +235,7 @@
   },
   {
     "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
-    "Method": "DeleteFolder",
+    "Method": "DeleteSingleFolder",
     "RelativePath": "api/Folder/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -184,6 +244,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.FolderController",
+    "Method": "DeleteMultipleFolders",
+    "RelativePath": "api/Folder/multiple",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": true
       }
     ],

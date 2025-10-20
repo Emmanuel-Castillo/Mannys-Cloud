@@ -75,19 +75,28 @@ namespace Mannys_Cloud_Backend.Controllers
 
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> DeleteFile(int id)
+        public async Task<IActionResult> DeleteSingleFile(int id)
         {
             try {
-                var file = await _context.Files.FindAsync(id);
-                if (file == null) return NotFound();
-
-                await _blobStorage.DeleteFileAsync(file.BlobPath);
-
-                file.IsDeleted = true;
-                await _context.SaveChangesAsync();
+                await this.DeleteFile(id);
                 return Ok(new { message = "File successfully deleted." });
             }
             catch (Exception ex) {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("multiple")]
+        [Authorize]
+        public async Task<IActionResult> DeleteMultipleFiles([FromBody] List<int> ids)
+        {
+            try {
+                var tasks = ids.Select(id => this.DeleteFile(id));
+                await Task.WhenAll(tasks);
+                return Ok(new { message = "Files successfully deleted." });
+            }
+            catch(Exception ex)
+            {
                 return BadRequest(ex.Message);
             }
         }
@@ -128,6 +137,25 @@ namespace Mannys_Cloud_Backend.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        public async Task DeleteFile(int id)
+        {
+            try
+            {
+                var file = await _context.Files.FindAsync(id);
+                if (file == null) throw new Exception("File not found!");
+
+                await _blobStorage.DeleteFileAsync(file.BlobPath);
+
+                file.IsDeleted = true;
+                await _context.SaveChangesAsync();
+                return;
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
     }

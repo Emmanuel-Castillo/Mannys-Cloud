@@ -21,3 +21,8 @@ export type FolderDto = {
     childFolders: FolderDto[]
     files: FileDto[]
 }
+
+export type Content = {
+    folderIds: number[];
+    fileIds: number[]
+}

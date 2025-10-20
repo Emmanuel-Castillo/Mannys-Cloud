@@ -61,7 +61,7 @@ builder.Services.AddAuthentication(options =>
     });
 builder.Services.AddScoped(_ =>
 {
-    return new BlobServiceClient(builder.Configuration.GetSection("Azure")["Storage Account Access Key"]);
+    return new BlobServiceClient(builder.Configuration.GetSection("Azure")["StorageAccountAccessKey"]);
 });
 builder.Services.AddScoped<IBlobStorage, BlobStorage>();
 

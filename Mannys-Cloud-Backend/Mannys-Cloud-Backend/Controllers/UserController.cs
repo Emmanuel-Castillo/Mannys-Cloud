@@ -101,7 +101,7 @@ namespace Mannys_Cloud_Backend.Controllers
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (userId == null) return Unauthorized();
 
-                var rootFolder = await _context.Folders.Include(f => f.FolderFiles).Include(f => f.ChildFolders).FirstAsync(f => f.IsRootFolder && f.UserId == int.Parse(userId));
+                var rootFolder = await _context.Folders.Include(f => f.FolderFiles.Where(ff => ff.IsDeleted == false)).Include(f => f.ChildFolders.Where(cf => cf.IsDeleted == false)).FirstAsync(f => f.IsRootFolder && f.UserId == int.Parse(userId));
                 if (rootFolder == null) return NotFound();
 
                 var rootFolderDto = _convertDto.ConvertToFolderDto(rootFolder);

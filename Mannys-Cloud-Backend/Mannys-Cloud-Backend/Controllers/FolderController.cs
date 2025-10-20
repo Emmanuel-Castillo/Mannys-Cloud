@@ -50,7 +50,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var folder = await _context.Folders.Include(f => f.FolderFiles).Include(f => f.ChildFolders).FirstAsync(f => f.FolderId == id);
+                var folder = await _context.Folders.Include(f => f.FolderFiles.Where(ff => ff.IsDeleted == false)).Include(f => f.ChildFolders.Where(ff => ff.IsDeleted == false)).FirstAsync(f => f.FolderId == id);
                 if (folder == null) return NotFound();
 
                 var folderDto = _convertDto.ConvertToFolderDto(folder);
@@ -93,15 +93,43 @@ namespace Mannys_Cloud_Backend.Controllers
 
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> DeleteFolder(int id)
+        public async Task<IActionResult> DeleteSingleFolder(int id)
         {
             try
             {
+                await this.DeleteFolder(id);
+                return Ok(new { message = "Folder successfully removed. " });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("multiple")]
+        [Authorize]
+        public async Task<IActionResult> DeleteMultipleFolders([FromBody] List<int> ids)
+        {
+            try {
+                var tasks = ids.Select(id => this.DeleteFolder(id));
+                await Task.WhenAll(tasks);
+
+                return Ok(new { message = "Folders successfully removed." });
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        public async Task DeleteFolder(int id)
+        {
+            try {
                 var folder = await _context.Folders.FindAsync(id);
-                if (folder == null) return NotFound();
+                if (folder == null) throw new Exception("Folder not found!");
 
                 // Check if folder is root folder for User
-                if (folder.IsRootFolder) return Forbid("Deleting root folders is prohibited.");
+                if (folder.IsRootFolder) throw new Exception("Deleting root folders is prohibited.");
 
                 // Grab folder path in Blob Storage namespace
                 // Then soft delete the folder in Blob Storage
@@ -114,13 +142,12 @@ namespace Mannys_Cloud_Backend.Controllers
                 folder.IsDeleted = true;
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = "Folder successfully removed. " });
+                return;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                return BadRequest(ex.Message);
+                throw;
             }
         }
     }
-
 }

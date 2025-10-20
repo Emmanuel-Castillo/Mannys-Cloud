@@ -39,6 +39,7 @@ export const AuthProvider = ({
         setAuthUser(data.userData);
       }
     } catch (error: any) {
+      console.log(error)
       toast.error(error.message);
     }
   };
@@ -47,19 +48,21 @@ export const AuthProvider = ({
     state: AuthState,
     credentials: AuthCredentials
   ) => {
+    const toastId = toast.loading("Loading...")
     try {
       const { data } = await axios.post(`/api/auth/${state}`, credentials);
       if (data.success) {
         axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
         localStorage.setItem("token", data.token);
-        toast.success(data.message);
+        toast.success(data.message, {id: toastId});
         setToken(data.token);
         setAuthUser(data.userData);
       }
     } catch (error: any) {
-      toast.error(error.message);
+      toast.error(error.message, {id: toastId});
     }
   };
+  
   const logout = async () => {
     axios.defaults.headers.common["Authorization"] = null;
     localStorage.removeItem("token")
