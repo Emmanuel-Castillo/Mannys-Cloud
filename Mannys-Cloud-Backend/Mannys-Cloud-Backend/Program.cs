@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:5173", "https://mannys-cloud-q031v1q8w-emmanuelcastillos-projects.vercel.app")
+                          policy.WithOrigins("http://localhost:5173", "https://mannys-cloud.vercel.app")
                             .AllowAnyHeader()
                             .AllowAnyMethod()
                             .AllowCredentials();
