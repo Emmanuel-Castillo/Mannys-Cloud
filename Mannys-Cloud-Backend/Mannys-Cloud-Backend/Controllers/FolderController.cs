@@ -50,7 +50,11 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var folder = await _context.Folders.Include(f => f.FolderFiles.Where(ff => ff.IsDeleted == false)).Include(f => f.ChildFolders.Where(ff => ff.IsDeleted == false)).FirstAsync(f => f.FolderId == id);
+                var folder = await _context.Folders
+                    .Include(f => f.FolderFiles.Where(ff => !ff.IsDeleted))
+                    .Include(f => f.ChildFolders.Where(cf => !cf.IsDeleted))
+                    .FirstOrDefaultAsync(f => f.FolderId == id);
+
                 if (folder == null) return NotFound();
 
                 var folderDto = _convertDto.ConvertToFolderDto(folder);
@@ -58,7 +62,8 @@ namespace Mannys_Cloud_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                // Log exception to App Insights if needed
+                return StatusCode(500, new { success = false, message = ex.Message });
             }
         }
 
