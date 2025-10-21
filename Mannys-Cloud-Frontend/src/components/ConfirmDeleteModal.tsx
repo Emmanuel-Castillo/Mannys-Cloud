@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CloseIcon from "./CloseIcon";
 import toast from "react-hot-toast";
 import type { Content } from "../types/ContentTypes";
