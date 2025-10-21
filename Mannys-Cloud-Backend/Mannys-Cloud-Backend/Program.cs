@@ -124,6 +124,20 @@ app.UseHttpsRedirection();
 
 app.UseCors(MyAllowSpecificOrigins);
 
+app.Use(async (context, next) =>
+{
+    try
+    {
+        await next();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"[ERROR] {DateTime.UtcNow}: {ex}");
+        context.Response.StatusCode = 500;
+        await context.Response.WriteAsJsonAsync(new { error = ex.Message });
+    }
+});
+
 app.UseAuthentication();
 app.UseAuthorization();
 
