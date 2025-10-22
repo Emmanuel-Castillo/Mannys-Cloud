@@ -327,5 +327,15 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mannys_Cloud_Backend.Controllers.UserController",
+    "Method": "GetUserTrash",
+    "RelativePath": "api/User/trash",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

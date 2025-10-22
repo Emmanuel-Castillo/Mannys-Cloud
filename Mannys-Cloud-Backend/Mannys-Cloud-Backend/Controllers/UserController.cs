@@ -113,5 +113,25 @@ namespace Mannys_Cloud_Backend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("trash")]
+        [Authorize]
+        public IActionResult GetUserTrash()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var trashFolders = _context.Folders.Where(f => f.UserId == int.Parse(userId) && f.IsDeleted).ToList();
+                var trashFiles = _context.Files.Where(f => f.UserId == int.Parse(userId) && f.IsDeleted).ToList();
+
+                var trashFoldersDto = trashFolders.Select(t => _convertDto.ConvertToFolderDto(t)).ToList();
+                var trashFilesDto = trashFiles.Select(t => _convertDto.ConvertToFileDto(t)).ToList();
+
+                return Ok(new { success = true, message = "User trash retrieved.", trashFolders = trashFoldersDto, trashFiles = trashFilesDto });
+            }
+            catch (Exception ex) { return BadRequest(ex.Message); }
+        }
     }
 }

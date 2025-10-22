@@ -6,8 +6,6 @@ import LeftArrowIcon from "../components/LeftArrowIcon";
 import AddContentModal from "../components/AddContentModal";
 import ActionSpan from "../components/ActionSpan";
 import ConfirmDeleteModal from "../components/ConfirmDeleteModal";
-import Navbar from "../components/Navbar";
-import { useNavigate } from "react-router-dom";
 import ContentTable from "../components/ContentTable";
 import { useContent } from "../context/ContentContext";
 
@@ -18,7 +16,6 @@ const HomePage = () => {
   const [folders, setFolders] = useState<FolderDto[]>([]);
   const [files, setFiles] = useState<FileDto[]>([]);
   const [selectContent, setSelectContent] = useState(false);
-  const navigate = useNavigate();
 
   // Render modal states
   const [addContent, setAddContent] = useState<"folder" | "file" | false>(
@@ -37,7 +34,7 @@ const HomePage = () => {
         setCurrFolder(rootFolder);
         setFolders(rootFolder.childFolders);
         setFiles(rootFolder.files);
-        setSelectContent(false)
+        setSelectContent(false);
       }
     } catch (error: any) {
       toast.error(error.message);
@@ -53,77 +50,58 @@ const HomePage = () => {
   return (
     authUser &&
     currFolder && (
-      <div className="h-screen w-full p-12 flex flex-col gap-4 md:gap-0">
-        <Navbar />
-
-        {/* body */}
-        <div className="w-full h-full md:grid md:grid-cols-[1fr_3fr] lg:grid-cols-[1fr_4fr] xl:grid-cols-[1fr_6fr]">
-          {/* page navigation */}
-          <div className="bg-gray-700 p-4 flex flex-col">
+      <div className="p-4">
+        {/* current folder name */}
+        <div className="text-2xl flex gap-2">
+          {currFolder.parentFolderId && (
+            <div
+              onClick={() => clickFolderHandler(currFolder.parentFolderId)}
+              className="cursor-pointer"
+            >
+              <LeftArrowIcon />
+            </div>
+          )}
+          Current folder: {currFolder.folderName}
+        </div>
+        {/* action buttons */}
+        {!selectContent && (
+          <div className="flex">
             <ActionSpan
-              text="Home"
+              text="Add folder+"
+              onClickButton={() => setAddContent("folder")}
+            />
+            <ActionSpan
+              text="Add file+"
+              onClickButton={() => setAddContent("file")}
+            />
+            <ActionSpan
+              text="Select all"
+              onClickButton={() => setSelectContent(true)}
+            />
+          </div>
+        )}
+        {/* selected action buttons */}
+        {selectContent && (
+          <div className="flex">
+            <ActionSpan
+              text="Delete"
               onClickButton={() => {
-                navigate(0);
+                setConfirmDeleteContent(true);
               }}
             />
-            <ActionSpan text="Trash" onClickButton={() => {}} />
-          </div>
-
-          <div className="p-4">
-            {/* current folder name */}
-            <div className="text-2xl flex gap-2">
-              {currFolder.parentFolderId && (
-                <div
-                  onClick={() => clickFolderHandler(currFolder.parentFolderId)}
-                  className="cursor-pointer"
-                >
-                  <LeftArrowIcon />
-                </div>
-              )}
-              Current folder: {currFolder.folderName}
-            </div>
-            {/* action buttons */}
-            {!selectContent && (
-              <div className="flex">
-                <ActionSpan
-                  text="Add folder+"
-                  onClickButton={() => setAddContent("folder")}
-                />
-                <ActionSpan
-                  text="Add file+"
-                  onClickButton={() => setAddContent("file")}
-                />
-                <ActionSpan
-                  text="Select all"
-                  onClickButton={() => setSelectContent(true)}
-                />
-              </div>
-            )}
-            {/* selected action buttons */}
-            {selectContent && (
-              <div className="flex">
-                <ActionSpan
-                  text="Delete"
-                  onClickButton={() => {
-                    setConfirmDeleteContent(true);
-                  }}
-                />
-                <ActionSpan
-                  text="Deselect all"
-                  onClickButton={() => setSelectContent(false)}
-                />
-              </div>
-            )}
-
-            <ContentTable
-              files={files}
-              folders={folders}
-              selectable={selectContent}
-              onSelectFolder={clickFolderHandler}
+            <ActionSpan
+              text="Deselect all"
+              onClickButton={() => setSelectContent(false)}
             />
           </div>
-        </div>
+        )}
 
+        <ContentTable
+          files={files}
+          folders={folders}
+          selectable={selectContent}
+          onSelectFolder={clickFolderHandler}
+        />
         {addContent && (
           <AddContentModal
             userId={authUser.userId}

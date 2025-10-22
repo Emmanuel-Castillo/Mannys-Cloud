@@ -9,7 +9,7 @@ type ContentTableProps = {
   folders: FolderDto[];
   files: FileDto[];
   selectable: boolean;
-  onSelectFolder: (folderId: number) => void;
+  onSelectFolder?: (folderId: number) => void;
 };
 const ContentTable = ({
   folders,
@@ -50,7 +50,9 @@ const ContentTable = ({
                     : [...prev.folderIds, f.folderId],
                 }))
               }
-              onSelectFolder={() => onSelectFolder(f.folderId)}
+              onSelectFolder={() =>
+                onSelectFolder && onSelectFolder(f.folderId)
+              }
             />
           ))}
 
