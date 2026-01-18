@@ -2,9 +2,9 @@
 
 namespace Mannys_Cloud_Backend.Util
 {
-    public class BuildPath
+    public static class BuildPath
     {
-        public string BuildFolderPath(Folder folder)
+        public static string BuildFolderPath(Folder folder)
         {
             var userId = folder.UserId;
             var pathSegments = new List<string>();

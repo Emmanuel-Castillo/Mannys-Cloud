@@ -5033,11 +5033,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
+      "projectUniqueName": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
       "projectName": "Mannys-Cloud-Backend",
-      "projectPath": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
+      "projectPath": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
       "packagesPath": "C:\\Users\\emman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\obj\\",
+      "outputPath": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5126,7 +5126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

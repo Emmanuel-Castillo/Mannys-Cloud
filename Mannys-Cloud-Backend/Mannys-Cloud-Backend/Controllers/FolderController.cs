@@ -1,12 +1,7 @@
-﻿using Mannys_Cloud_Backend.Data;
-using Mannys_Cloud_Backend.DTO.Requests;
-using Mannys_Cloud_Backend.Models;
-using Mannys_Cloud_Backend.Services;
-using Mannys_Cloud_Backend.Util;
+﻿using Mannys_Cloud_Backend.DTO.Requests;
+using Mannys_Cloud_Backend.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
@@ -14,17 +9,10 @@ namespace Mannys_Cloud_Backend.Controllers
     [ApiController]
     public class FolderController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-        private readonly IBlobStorage _blobStorage;
-        private readonly BuildPath _buildPath;
-        private readonly ConvertDto _convertDto;
-
-        public FolderController(ApplicationDbContext context, IBlobStorage blobStorage,  BuildPath buildPath, ConvertDto convertDto)
+        private readonly IFolderService _folderService;
+        public FolderController(IFolderService folderService)
         {
-            _context = context;
-            _blobStorage = blobStorage;
-            _buildPath = buildPath;
-            _convertDto = convertDto;
+            _folderService = folderService;
         }
 
         [HttpGet]
@@ -33,9 +21,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var folders = await _context.Folders.Include(f => f.FolderFiles).ToListAsync();
-                var folderDtos = folders.Select(f => _convertDto.ConvertToFolderDto(f)).ToList();
-
+                var folderDtos = await _folderService.GetFolders();
                 return Ok(new { message = "Folders retrieved.", folders = folderDtos });
             }
             catch (Exception ex)
@@ -50,14 +36,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var folder = await _context.Folders
-                    .Include(f => f.FolderFiles.Where(ff => !ff.IsDeleted))
-                    .Include(f => f.ChildFolders.Where(cf => !cf.IsDeleted))
-                    .FirstOrDefaultAsync(f => f.FolderId == id);
-
-                if (folder == null) return NotFound();
-
-                var folderDto = _convertDto.ConvertToFolderDto(folder);
+                var folderDto = await _folderService.GetFolder(id);
                 return Ok(new { success = true, message = "Folder successfully retrieved.", folder = folderDto });
             }
             catch (Exception ex)
@@ -72,23 +51,7 @@ namespace Mannys_Cloud_Backend.Controllers
         public async Task<IActionResult> AddFolder(AddFolderRequest request)
         {
             try {
-
-                // Validate request UserId and ParentFolderId existence
-                var user = await _context.Users.FindAsync(request.UserId);
-                var parentFolder = await _context.Folders.FindAsync(request.ParentFolderId);
-
-                if (user == null || parentFolder == null) return BadRequest("User or Parent Folder not valid.");
-
-                var newFolder = new Folder
-                {
-                    UserId = request.UserId,
-                    FolderName = request.FolderName,
-                    ParentFolderId = request.ParentFolderId,
-                };
-
-                _context.Folders.Add(newFolder);
-                await _context.SaveChangesAsync();
-
+                await _folderService.AddFolder(request);
                 return Ok(new { success = true,  message = "Folder successfully created." });
             }
             catch (Exception ex) {
@@ -102,7 +65,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                await this.DeleteFolder(id);
+                await _folderService.DeleteSingleFolder(id);
                 return Ok(new { message = "Folder successfully removed. " });
             }
             catch (Exception ex)
@@ -116,42 +79,12 @@ namespace Mannys_Cloud_Backend.Controllers
         public async Task<IActionResult> DeleteMultipleFolders([FromBody] List<int> ids)
         {
             try {
-                var tasks = ids.Select(id => this.DeleteFolder(id));
-                await Task.WhenAll(tasks);
-
+                await _folderService.DeleteMultipleFolders(ids);
                 return Ok(new { message = "Folders successfully removed." });
             }
             catch(Exception ex)
             {
                 return BadRequest(ex.Message);
-            }
-        }
-
-        public async Task DeleteFolder(int id)
-        {
-            try {
-                var folder = await _context.Folders.FindAsync(id);
-                if (folder == null) throw new Exception("Folder not found!");
-
-                // Check if folder is root folder for User
-                if (folder.IsRootFolder) throw new Exception("Deleting root folders is prohibited.");
-
-                // Grab folder path in Blob Storage namespace
-                // Then soft delete the folder in Blob Storage
-                var folderPath = _buildPath.BuildFolderPath(folder);
-                await _blobStorage.DeleteFolderAsync(folderPath);
-
-                // Set folder and children IsDeleted to true
-                await _context.Files.Where(f => f.FolderId == folder.FolderId).
-                    ExecuteUpdateAsync(setters => setters.SetProperty(file => file.IsDeleted, true));
-                folder.IsDeleted = true;
-                await _context.SaveChangesAsync();
-
-                return;
-            }
-            catch(Exception ex)
-            {
-                throw;
             }
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v/X4sbMiLQw=",
+  "dgSpecHash": "qjR2BzVOnVQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emman\\OneDrive\\Desktop\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
+  "projectFilePath": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emman\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\emman\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

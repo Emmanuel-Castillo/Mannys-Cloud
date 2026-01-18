@@ -1,5 +1,6 @@
 using Azure.Storage.Blobs;
 using Mannys_Cloud_Backend.Data;
+using Mannys_Cloud_Backend.Interfaces;
 using Mannys_Cloud_Backend.Services;
 using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -30,10 +31,11 @@ var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddScoped<ConvertDto>();
-builder.Services.AddScoped<BuildPath>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IFolderService, FolderService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection"),

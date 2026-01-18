@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("128ce34c-7e10-4741-a37d-d944534dfef7")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mannys-Cloud-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6140f381092dc198351f6902ca2055b476374887")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0e435daadb81f7b62d99823d19289b83bf701dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mannys-Cloud-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mannys-Cloud-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

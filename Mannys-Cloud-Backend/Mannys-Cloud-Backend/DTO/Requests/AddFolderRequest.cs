@@ -6,7 +6,7 @@
 
         public required string FolderName { get; set; }
 
-        public int ParentFolderId { get; set; }
+        public required int ParentFolderId { get; set; }
 
     }
 }

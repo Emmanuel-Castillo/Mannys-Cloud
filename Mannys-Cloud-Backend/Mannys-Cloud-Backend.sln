@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mannys-Cloud-Backend", "Mannys-Cloud-Backend\Mannys-Cloud-Backend.csproj", "{F16CD43A-B455-4958-A410-5F795CB35C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mannys-Cloud-Backend-Tests", "Mannys-Cloud-Backend-Tests\Mannys-Cloud-Backend-Tests.csproj", "{2941C902-D393-452B-8DBD-55CAD8B68161}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F16CD43A-B455-4958-A410-5F795CB35C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16CD43A-B455-4958-A410-5F795CB35C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16CD43A-B455-4958-A410-5F795CB35C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2941C902-D393-452B-8DBD-55CAD8B68161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2941C902-D393-452B-8DBD-55CAD8B68161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2941C902-D393-452B-8DBD-55CAD8B68161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2941C902-D393-452B-8DBD-55CAD8B68161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

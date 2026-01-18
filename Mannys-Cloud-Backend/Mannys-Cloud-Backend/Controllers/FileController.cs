@@ -1,6 +1,6 @@
 ﻿using Mannys_Cloud_Backend.Data;
 using Mannys_Cloud_Backend.DTO.Requests;
-using Mannys_Cloud_Backend.Services;
+using Mannys_Cloud_Backend.Interfaces;
 using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -12,15 +12,11 @@ namespace Mannys_Cloud_Backend.Controllers
     [ApiController]
     public class FileController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-        private readonly IBlobStorage _blobStorage;
-        private readonly ConvertDto _convertDto;
+        private readonly IFileService _fileService;
 
-        public FileController(ApplicationDbContext context, IBlobStorage bloblStorage, ConvertDto convertDto)
+        public FileController(IFileService fileService)
         {
-            _context = context;
-            _blobStorage = bloblStorage;
-            _convertDto = convertDto;
+            _fileService = fileService;
         }
 
         [HttpGet("{id}")]
@@ -29,11 +25,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var file = await _context.Files.FindAsync(id);
-                if (file == null) return NotFound();
-
-                var fileDto = _convertDto.ConvertToFileDto(file);
-
+                var fileDto = await _fileService.GetFile(id);
                 return Ok(new {message = "File retrieved.", file = fileDto });
             }
             catch (Exception ex)
@@ -48,23 +40,7 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var file = request.File;
-                var blobName = $"{request.UserId}/{request.FolderId}/{Guid.NewGuid()}_{file.FileName}";
-                await _blobStorage.UploadFileAsync(file, blobName);
-
-                var newFile = new Models.File
-                {
-                    UserId = request.UserId,
-                    FileName = file.FileName,
-                    BlobPath = blobName,
-                    ContentType = file.ContentType,
-                    FolderId = request.FolderId,
-                    SizeBytes = (int)file.Length
-                };
-
-                _context.Files.Add(newFile);
-                await _context.SaveChangesAsync();
-
+                await _fileService.AddFile(request);
                 return Ok(new { success = true, message = "File uploaded successfully" });
             }
             catch (Exception ex) { 
@@ -78,7 +54,7 @@ namespace Mannys_Cloud_Backend.Controllers
         public async Task<IActionResult> DeleteSingleFile(int id)
         {
             try {
-                await this.DeleteFile(id);
+                await _fileService.DeleteSingleFile(id);
                 return Ok(new { message = "File successfully deleted." });
             }
             catch (Exception ex) {
@@ -91,8 +67,7 @@ namespace Mannys_Cloud_Backend.Controllers
         public async Task<IActionResult> DeleteMultipleFiles([FromBody] List<int> ids)
         {
             try {
-                var tasks = ids.Select(id => this.DeleteFile(id));
-                await Task.WhenAll(tasks);
+                await _fileService.DeleteMultipleFiles(ids);
                 return Ok(new { message = "Files successfully deleted." });
             }
             catch(Exception ex)
@@ -105,13 +80,7 @@ namespace Mannys_Cloud_Backend.Controllers
         [Authorize]
         public async Task<IActionResult> UndeleteFile(int id) {
             try {
-                var file = await _context.Files.FindAsync(id);
-                if (file == null) return NotFound();
-
-                await _blobStorage.UndeleteFileAsync(file.BlobPath);
-                file.IsDeleted = false;
-
-                await _context.SaveChangesAsync();
+                await _fileService.UndeleteFile(id);
                 return Ok(new { message = "File successfully restored." });
             }
             catch (Exception ex) {
@@ -125,37 +94,14 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var file = await _context.Files.FindAsync(id);
-                if (file == null) return NotFound();
-
-                // Get blob stream from Azure
-                var stream = await _blobStorage.DownloadFileAsync(file.BlobPath);
+                var result = await _fileService.DownloadFile(id);
 
                 // Send it to client as a downloadable file
-                return File(stream, file.ContentType, file.FileName);
+                return File(result.stream, result.contentType, result.fileName);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
-            }
-        }
-
-        public async Task DeleteFile(int id)
-        {
-            try
-            {
-                var file = await _context.Files.FindAsync(id);
-                if (file == null) throw new Exception("File not found!");
-
-                await _blobStorage.DeleteFileAsync(file.BlobPath);
-
-                file.IsDeleted = true;
-                await _context.SaveChangesAsync();
-                return;
-            }
-            catch (Exception ex)
-            {
-                throw;
             }
         }
     }

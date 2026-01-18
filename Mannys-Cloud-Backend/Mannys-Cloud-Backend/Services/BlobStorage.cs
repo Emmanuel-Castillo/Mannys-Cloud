@@ -1,6 +1,7 @@
 ﻿
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using Mannys_Cloud_Backend.Interfaces;
 
 namespace Mannys_Cloud_Backend.Services
 {
