@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\folderservicetests\\deletefoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\folderservicetests\\deletefoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\folderservicetests\\getfolderstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\folderservicetests\\getfolderstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\folderservicetests\\getfoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\folderservicetests\\getfoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\services\\folderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +35,20 @@
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\interfaces\\ifolderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\foldercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\folderservicetests\\deletesinglefoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\folderservicetests\\deletesinglefoldertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\common\\testdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\common\\testdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\folderservicetests\\deletemultiplefolderstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\folderservicetests\\deletemultiplefolderstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\services\\blobstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,48 +66,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 233,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\FileService.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Services\\FileService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA3wEwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T17:26:22.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeleteMultipleFoldersTests.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteMultipleFoldersTests.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteMultipleFoldersTests.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteMultipleFoldersTests.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteMultipleFoldersTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T17:02:44.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FolderController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T00:50:00.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IFolderService.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T00:50:52.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FolderService.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\FolderService.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\FolderService.cs",
               "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\FolderService.cs",
               "RelativeToolTip": "Mannys-Cloud-Backend\\Services\\FolderService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwHcAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFEAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T03:27:57.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FolderController.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FolderController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T00:50:00.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IFolderService.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
-              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Interfaces\\IFolderService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T00:50:52.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "BlobStorage.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Services\\BlobStorage.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Services\\BlobStorage.cs",
@@ -91,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "BuildPath.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\BuildPath.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Util\\BuildPath.cs",
@@ -105,46 +161,106 @@
         },
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T18:14:35.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T18:14:34.247Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeleteFolderTests.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteFolderTests.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteFolderTests.cs",
-              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteFolderTests.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteFolderTests.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCwAAAAFAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T18:14:24.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetFoldersTests.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFoldersTests.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFoldersTests.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFoldersTests.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFoldersTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T18:11:07.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeleteSingleFolderTests.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteSingleFolderTests.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteSingleFolderTests.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteSingleFolderTests.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\DeleteSingleFolderTests.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T04:37:18.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "TestDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Common\\TestDbContextFactory.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Common\\TestDbContextFactory.cs",
               "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Common\\TestDbContextFactory.cs",
               "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\Common\\TestDbContextFactory.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwFsAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvz4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T04:41:28.071Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 78,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "WhenOpened": "2026-01-16T04:41:28.071Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetFolderTests.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFolderTests.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFolderTests.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFolderTests.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\FolderServiceTests\\GetFolderTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T17:46:02.961Z",
+              "EditorCaption": ""
             }
           ]
         }

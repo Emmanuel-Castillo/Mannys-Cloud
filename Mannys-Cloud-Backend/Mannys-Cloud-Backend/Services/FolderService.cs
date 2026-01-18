@@ -50,7 +50,6 @@ namespace Mannys_Cloud_Backend.Services
                 if (folder == null) throw new Exception("Folder not found!");
 
                 await DeleteFolderContents(folder);
-
                 await _context.SaveChangesAsync();
             }
             catch {
@@ -60,9 +59,16 @@ namespace Mannys_Cloud_Backend.Services
 
         public async Task DeleteMultipleFolders(List<int> folderIds)
         {
-            try { 
-                var tasks = folderIds.Select(id => this.DeleteSingleFolder(id));
+            try {
+                var folders = new List<Folder>();
+                foreach (var folderId in folderIds) { 
+                    var f = await _context.Folders.FindAsync(folderId);
+                    if (f == null) throw new Exception ("Folder not found!");
+                    folders.Add(f);
+                }
+                var tasks = folders.Select(id => DeleteFolderContents(id));
                 await Task.WhenAll(tasks);
+                await _context.SaveChangesAsync();
             }
             catch {
                 throw;
@@ -73,6 +79,7 @@ namespace Mannys_Cloud_Backend.Services
         {
             try {
                 var folder = await _context.Folders
+                    .AsNoTracking()     // Important! Prevents deleted content from being part of result
                     .Include(f => f.FolderFiles.Where(ff => !ff.IsDeleted))
                     .Include(f => f.ChildFolders.Where(cf => !cf.IsDeleted))
                     .FirstOrDefaultAsync(f => f.FolderId == folderId);

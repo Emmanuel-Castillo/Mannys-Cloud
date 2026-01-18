@@ -2,6 +2,7 @@
 using Mannys_Cloud_Backend.DTO;
 using Mannys_Cloud_Backend.DTO.Requests;
 using Mannys_Cloud_Backend.Interfaces;
+using Mannys_Cloud_Backend.Models;
 using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Mvc;
 
@@ -62,7 +63,14 @@ namespace Mannys_Cloud_Backend.Services
         {
             try
             {
-                var tasks = fileIds.Select(id => this.DeleteSingleFile(id));
+                var files = new List<Models.File>();
+                foreach (var fileId in fileIds)
+                {
+                    var file = await _context.Files.FindAsync(fileId);
+                    if (file == null) throw new Exception("File not found!");
+                    files.Add(file);
+                }
+                var tasks = files.Select(f => DeleteFile(f));
                 await Task.WhenAll(tasks);
             }
             catch
@@ -78,9 +86,7 @@ namespace Mannys_Cloud_Backend.Services
                 var file = await _context.Files.FindAsync(fileId);
                 if (file == null) throw new Exception("File not found!");
 
-                await _blobStorage.DeleteFileAsync(file.BlobPath);
-
-                file.IsDeleted = true;
+                await DeleteFile(file);
                 await _context.SaveChangesAsync();
             }
             catch
@@ -137,6 +143,12 @@ namespace Mannys_Cloud_Backend.Services
             {
                 throw;
             }
+        }
+
+        private async Task DeleteFile(Models.File file)
+        {
+            await _blobStorage.DeleteFileAsync(file.BlobPath);
+            file.IsDeleted = true;
         }
     }
 }

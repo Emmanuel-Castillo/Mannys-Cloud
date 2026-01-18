@@ -48,6 +48,19 @@ namespace Mannys_Cloud_Backend_Tests.Common
                     FolderName = "childFolder2",
                     UserId = 1,
                     ParentFolderId = 2
+                },
+                new Folder {
+                    FolderId = 4,
+                    FolderName = "childFolder3",
+                    UserId = 1,
+                    ParentFolderId = 1
+                },
+                new Folder {
+                    FolderId = 5,
+                    FolderName = "childFolder4",
+                    UserId = 1,
+                    ParentFolderId = 1,
+                    IsDeleted = true
                 }
                 ]);
 
