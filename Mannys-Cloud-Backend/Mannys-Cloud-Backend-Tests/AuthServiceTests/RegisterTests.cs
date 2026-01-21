@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mannys_Cloud_Backend_Tests.Auth
+namespace Mannys_Cloud_Backend_Tests.AuthServiceTests
 {
-    public class AuthServiceTests_Register
+    public class RegisterTests
     {
         [Fact]
         public async Task Register_ReturnUserData()

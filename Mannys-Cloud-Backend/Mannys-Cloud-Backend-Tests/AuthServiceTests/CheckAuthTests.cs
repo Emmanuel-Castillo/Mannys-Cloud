@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mannys_Cloud_Backend_Tests.Auth
+namespace Mannys_Cloud_Backend_Tests.AuthServiceTests
 {
-    public class AuthServiceTests
+    public class CheckAuthTests
     {
         [Fact]
         public async Task CheckAuth_ReturnsUserDto()

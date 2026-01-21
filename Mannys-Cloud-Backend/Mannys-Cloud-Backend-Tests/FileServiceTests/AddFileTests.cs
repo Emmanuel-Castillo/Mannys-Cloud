@@ -11,9 +11,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mannys_Cloud_Backend_Tests.File
+namespace Mannys_Cloud_Backend_Tests.FileServiceTests
 {
-    public class FileServiceTests_UploadFile
+    public class AddFileTests
     {
         [Fact]
         public async Task AddFile_SuccessfulAddition()

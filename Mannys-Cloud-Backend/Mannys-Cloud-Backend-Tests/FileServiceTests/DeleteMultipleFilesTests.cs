@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mannys_Cloud_Backend_Tests.File
+namespace Mannys_Cloud_Backend_Tests.FileServiceTests
 {
-    public class FileServiceTests_DeleteMultipleFiles
+    public class DeleteMultipleFilesTests
     {
         [Fact]
         public async Task DeleteMultipleFiles_TaskEndsSuccessfully()

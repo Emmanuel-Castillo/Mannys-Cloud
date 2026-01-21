@@ -57,10 +57,8 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return NotFound();
-
-                var userDto = await _authService.CheckAuth(int.Parse(userId));
+                var userId = CheckUser.GrabParsedUserId(User);
+                var userDto = await _authService.CheckAuth(userId);
                 return Ok(new { success = true, userData = userDto });
             }
             catch (Exception ex)

@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mannys_Cloud_Backend_Tests.File
+namespace Mannys_Cloud_Backend_Tests.FileServiceTests
 {
-    public class FileServiceTests_GetFile
+    public class GetFileTests
     {
         [Fact]
         public async Task GetFile_ReturnsFileDto()

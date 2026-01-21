@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Mannys_Cloud_Backend_Tests.JwtServiceTests
 {
-    public class JwtServiceTests
+    public class GenerateTokenTests
     {
         [Fact]
         public void GenerateToken_ReturnsToken()

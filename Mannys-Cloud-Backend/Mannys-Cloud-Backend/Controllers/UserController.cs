@@ -1,5 +1,6 @@
 ﻿using Mannys_Cloud_Backend.Data;
 using Mannys_Cloud_Backend.DTO.Requests;
+using Mannys_Cloud_Backend.Interfaces;
 using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
@@ -14,14 +16,11 @@ namespace Mannys_Cloud_Backend.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IUserService _userService;
 
-        private readonly ApplicationDbContext _context;
-        private readonly ConvertDto _convertDto;
-
-        public UserController(ApplicationDbContext context, ConvertDto convertDto)
+        public UserController(IUserService userService)
         {
-            _context = context;
-            _convertDto = convertDto;
+            _userService = userService;
         }
 
         [HttpGet("{id}")]
@@ -31,10 +30,10 @@ namespace Mannys_Cloud_Backend.Controllers
 
             try
             {
-                var user = await _context.Users.FindAsync(id);
-                if (user == null) return NotFound();
-
-                return Ok(new { user.UserId, user.FullName, user.Email, user.UserFiles, user.UserFolders });
+                CheckUser.UserIdMatchesRequestedId(User, id);
+                var userData = await _userService.GetUser(id);
+                var userDto = userData.userDto;
+                return Ok(new { userDto.UserId, userDto.FullName, userDto.Email, userData.userFiles, userData.userFolders });
             }
             catch (Exception ex)
             {
@@ -48,28 +47,8 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-
-                // Validate request
-                if (string.IsNullOrEmpty(request.NewFullName) && string.IsNullOrEmpty(request.NewEmail))
-                {
-                    return BadRequest("Invalid request.");
-                }
-
-                var user = await _context.Users.FindAsync(id);
-                if (user == null) return NotFound();
-
-                if (!string.IsNullOrEmpty(request.NewEmail))
-                {
-                    if (!Regex.IsMatch(request.NewEmail, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-                        return BadRequest("Invalid email format");
-                    else
-                        user.Email = request.NewEmail;
-                }
-
-                if (!string.IsNullOrEmpty(request.NewFullName))
-                    user.FullName = request.NewFullName;
-
-                await _context.SaveChangesAsync();
+                CheckUser.UserIdMatchesRequestedId(User, id);
+                await _userService.UpdateUser(id, request);
                 return Ok("User successfully updated.");
             }
             catch (Exception ex)
@@ -82,14 +61,16 @@ namespace Mannys_Cloud_Backend.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteUser(int id)
         {
-
-            var user = await _context.Users.FindAsync(id);
-            if (user == null) return NotFound();
-
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-
-            return Ok("User deleted.");
+            try { 
+                CheckUser.UserIdMatchesRequestedId(User, id);
+                await _userService.DeleteUser(id);
+                return Ok("User deleted.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
 
         [HttpGet("root")]
@@ -98,14 +79,8 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return Unauthorized();
-
-                var rootFolder = await _context.Folders.Include(f => f.FolderFiles.Where(ff => ff.IsDeleted == false)).Include(f => f.ChildFolders.Where(cf => cf.IsDeleted == false)).FirstAsync(f => f.IsRootFolder && f.UserId == int.Parse(userId));
-                if (rootFolder == null) return NotFound();
-
-                var rootFolderDto = _convertDto.ConvertToFolderDto(rootFolder);
-
+                var userId = CheckUser.GrabParsedUserId(User);
+                var rootFolderDto = await _userService.GetUserRootFolder(userId);
                 return Ok(new { success = true, message = "Root folder retrieved.", folder = rootFolderDto });
             }
             catch (Exception ex)
@@ -120,16 +95,9 @@ namespace Mannys_Cloud_Backend.Controllers
         {
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return Unauthorized();
-
-                var trashFolders = _context.Folders.Where(f => f.UserId == int.Parse(userId) && f.IsDeleted).ToList();
-                var trashFiles = _context.Files.Where(f => f.UserId == int.Parse(userId) && f.IsDeleted).ToList();
-
-                var trashFoldersDto = trashFolders.Select(t => _convertDto.ConvertToFolderDto(t)).ToList();
-                var trashFilesDto = trashFiles.Select(t => _convertDto.ConvertToFileDto(t)).ToList();
-
-                return Ok(new { success = true, message = "User trash retrieved.", trashFolders = trashFoldersDto, trashFiles = trashFilesDto });
+                var userId = CheckUser.GrabParsedUserId(User);
+                var trashData = _userService.GetUserTrash(userId);
+                return Ok(new { success = true, message = "User trash retrieved.", trashData.trashFolders, trashData.trashFiles });
             }
             catch (Exception ex) { return BadRequest(ex.Message); }
         }
