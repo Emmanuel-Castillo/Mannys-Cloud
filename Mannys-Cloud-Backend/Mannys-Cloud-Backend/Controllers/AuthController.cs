@@ -60,7 +60,8 @@ namespace Mannys_Cloud_Backend.Controllers
             try
             {
                 var result = await _authService.Login(request);
-                return Ok(new { success = true, message = "User successfully logged in", result.userData, result.token });
+                var response = new AuthResponse(true, "User successfully logged in", result.userData, result.token);
+                return Ok(response);
             }
             catch (Exception ex)
             {
@@ -76,7 +77,8 @@ namespace Mannys_Cloud_Backend.Controllers
             {
                 var userId = CheckUser.GrabParsedUserId(User);
                 var userDto = await _authService.CheckAuth(userId);
-                return Ok(new { success = true, userData = userDto });
+                var response = new AuthResponse(true, "User retrieved.", userDto, null);
+                return Ok(response);
             }
             catch (Exception ex)
             {
