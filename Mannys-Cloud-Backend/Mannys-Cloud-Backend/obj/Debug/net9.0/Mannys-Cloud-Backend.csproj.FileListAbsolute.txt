@@ -342,3 +342,4 @@ C:\Users\emman\Documents\Fullstack Projects\Mannys-Cloud\Mannys-Cloud-Backend\Ma
 C:\Users\emman\Documents\Fullstack Projects\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\obj\Debug\net9.0\Mannys-Cloud-Backend.pdb
 C:\Users\emman\Documents\Fullstack Projects\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\obj\Debug\net9.0\Mannys-Cloud-Backend.genruntimeconfig.cache
 C:\Users\emman\Documents\Fullstack Projects\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\obj\Debug\net9.0\ref\Mannys-Cloud-Backend.dll
+C:\Users\emman\Documents\Fullstack Projects\Mannys-Cloud\Mannys-Cloud-Backend\Mannys-Cloud-Backend\obj\Debug\net9.0\swae.build.ex.cache

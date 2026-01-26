@@ -1,4 +1,5 @@
 ﻿using Mannys_Cloud_Backend.Data;
+using Mannys_Cloud_Backend.DTO;
 using Mannys_Cloud_Backend.DTO.Requests;
 using Mannys_Cloud_Backend.Interfaces;
 using Mannys_Cloud_Backend.Models;
@@ -12,6 +13,21 @@ using System.Text.RegularExpressions;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
+    public record AuthResponse
+    {
+        public readonly bool success;
+        public readonly string message;
+        public readonly UserDto? userData;
+        public readonly string? token;
+
+        public AuthResponse(bool _success, string _message, UserDto? _userData, string? _token)
+        {
+            success = _success;
+            message = _message;
+            userData = _userData;
+            token = _token;
+        }
+    }
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -29,7 +45,8 @@ namespace Mannys_Cloud_Backend.Controllers
             try
             {
                 var result = await _authService.Register(request);
-                return Ok(new { success = true, message = "User successfully registered", result.userData, result.token });
+                var response = new AuthResponse(true, "User successfully registered", result.userData, result.token);
+                return Ok(response);
             }
             catch (Exception ex)
             {

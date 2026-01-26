@@ -31,4 +31,11 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Common\" />
+    <Folder Include="Controllers\FileControllerTests\" />
+    <Folder Include="Controllers\FolderControllerTests\" />
+    <Folder Include="Controllers\UserControllerTests\" />
+  </ItemGroup>
+
 </Project>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mannys-Cloud-Backend-Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44646e4114f7ba6caf6c3afa4629bc1fb5b17bcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+026661a98ce1f19c07a08159b80626c4d7c937b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mannys-Cloud-Backend-Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mannys-Cloud-Backend-Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
