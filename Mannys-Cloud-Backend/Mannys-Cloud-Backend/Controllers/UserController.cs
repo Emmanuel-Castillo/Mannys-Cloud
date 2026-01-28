@@ -1,6 +1,8 @@
 ﻿using Mannys_Cloud_Backend.Data;
+using Mannys_Cloud_Backend.DTO;
 using Mannys_Cloud_Backend.DTO.Requests;
 using Mannys_Cloud_Backend.Interfaces;
+using Mannys_Cloud_Backend.Models;
 using Mannys_Cloud_Backend.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -27,6 +29,33 @@ namespace Mannys_Cloud_Backend.Controllers
             Email = _Email;
             userFiles = _userFiles;
             userFolders = _userFolders;
+        }
+    }
+    public record UserRootFolderResponse
+    {
+        public readonly bool success;
+        public readonly string message;
+        public readonly FolderDto folder;
+        public UserRootFolderResponse(bool _success, string _message, FolderDto _folder)
+        {
+            success = _success;
+            message = _message;
+            folder = _folder;
+        }
+    }
+
+    public record UserTrashResponse
+    {
+        public readonly bool success;
+        public readonly string message;
+        public readonly List<FileDto> trashFiles;
+        public readonly List<FolderDto> trashFolders;
+        public UserTrashResponse(bool _success, string _message, List<FileDto> _trashFiles, List<FolderDto> _trashFolders)
+        {
+            success= _success;
+            message = _message;
+            trashFiles = _trashFiles;
+            trashFolders = _trashFolders;
         }
     }
     [Route("api/[controller]")]
@@ -99,7 +128,8 @@ namespace Mannys_Cloud_Backend.Controllers
             {
                 var userId = CheckUser.GrabParsedUserId(User);
                 var rootFolderDto = await _userService.GetUserRootFolder(userId);
-                return Ok(new { success = true, message = "Root folder retrieved.", folder = rootFolderDto });
+                var response = new UserRootFolderResponse(true, "Root folder retrieved.", rootFolderDto);
+                return Ok(response);
             }
             catch (Exception ex)
             {
@@ -115,7 +145,8 @@ namespace Mannys_Cloud_Backend.Controllers
             {
                 var userId = CheckUser.GrabParsedUserId(User);
                 var trashData = _userService.GetUserTrash(userId);
-                return Ok(new { success = true, message = "User trash retrieved.", trashData.trashFolders, trashData.trashFiles });
+                var response = new UserTrashResponse(true, "User trash retrieved.", trashData.trashFiles, trashData.trashFolders);
+                return Ok(response);
             }
             catch (Exception ex) { return BadRequest(ex.Message); }
         }
