@@ -34,7 +34,6 @@
   <ItemGroup>
     <Folder Include="Controllers\FileControllerTests\" />
     <Folder Include="Controllers\FolderControllerTests\" />
-    <Folder Include="Controllers\UserControllerTests\" />
   </ItemGroup>
 
 </Project>

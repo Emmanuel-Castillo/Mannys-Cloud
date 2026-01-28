@@ -11,11 +11,11 @@ namespace Mannys_Cloud_Backend_Tests.Controllers.Common
 {
     public static class HTTPUserContext
     {
-        public static ControllerContext SetTestControllerContext()
+        public static ControllerContext SetTestControllerContext(string? id = "1")
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, "1"),
+                new Claim(ClaimTypes.NameIdentifier, id),
             };
 
             var identity = new ClaimsIdentity(claims, "TestUserType");

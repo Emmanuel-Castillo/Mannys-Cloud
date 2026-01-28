@@ -7,6 +7,7 @@ namespace Mannys_Cloud_Backend.Util
     {
         public static int GrabParsedUserId(ClaimsPrincipal user)
         {
+            if (user == null) throw new Exception("User is null");
             var authUserId = (user.FindFirst(ClaimTypes.NameIdentifier)?.Value) ?? throw new Exception("Authorized user id required.");
             var isIdNumeric = int.TryParse(authUserId, out int parsedId);
             if (!isIdNumeric) throw new Exception("User id cannot be parsed to an int.");

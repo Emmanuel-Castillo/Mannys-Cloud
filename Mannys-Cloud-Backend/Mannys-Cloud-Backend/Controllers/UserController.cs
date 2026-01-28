@@ -12,6 +12,23 @@ using System.Threading.Tasks;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
+    public record GetUserResponse
+    {
+        private readonly int UserId;
+        private readonly string FullName;
+        private readonly string Email;
+        private readonly ICollection<Models.File> userFiles;
+        private readonly ICollection<Models.Folder> userFolders;
+
+        public GetUserResponse(int _UserId, string _FullName, string _Email, ICollection<Models.File> _userFiles, ICollection<Models.Folder> _userFolders)
+        {
+            UserId = _UserId;
+            FullName = _FullName;
+            Email = _Email;
+            userFiles = _userFiles;
+            userFolders = _userFolders;
+        }
+    }
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -33,7 +50,8 @@ namespace Mannys_Cloud_Backend.Controllers
                 CheckUser.UserIdMatchesRequestedId(User, id);
                 var userData = await _userService.GetUser(id);
                 var userDto = userData.userDto;
-                return Ok(new { userDto.UserId, userDto.FullName, userDto.Email, userData.userFiles, userData.userFolders });
+                var response = new GetUserResponse(userDto.UserId, userDto.FullName, userDto.Email, userData.userFiles, userData.userFolders);
+                return Ok(response);
             }
             catch (Exception ex)
             {
