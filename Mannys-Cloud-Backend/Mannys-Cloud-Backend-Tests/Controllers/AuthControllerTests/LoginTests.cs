@@ -37,11 +37,11 @@ namespace Mannys_Cloud_Backend_Tests.Controllers.AuthControllerTests
             var okObj = Assert.IsType<OkObjectResult>(result);
             var response = Assert.IsType<AuthResponse>(okObj.Value);
 
-            Assert.True(response.success);
-            Assert.Equal("User successfully logged in", response.message);
-            Assert.Equal("testtoken", response.token);
+            Assert.True(response.Success);
+            Assert.Equal("User successfully logged in", response.Message);
+            Assert.Equal("testtoken", response.Token);
 
-            var userDto = Assert.IsType<UserDto>(response.userData);
+            var userDto = Assert.IsType<UserDto>(response.UserData);
             Assert.Equal(request.Email, userDto.Email);
             Assert.Equal(authUserData.userData.FullName, userDto.FullName);
             Assert.Equal(authUserData.userData.UserId, userDto.UserId);
