@@ -14,50 +14,12 @@ using System.Threading.Tasks;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
-    public record GetUserResponse
-    {
-        private readonly int UserId;
-        private readonly string FullName;
-        private readonly string Email;
-        private readonly ICollection<Models.File> userFiles;
-        private readonly ICollection<Models.Folder> userFolders;
+    public record GetUserResponse(int UserId,string FullName,string Email,ICollection<Models.File> userFiles,ICollection<Models.Folder> userFolders);
+    
+    public record UserRootFolderResponse(bool success,string message, FolderDto folder);
 
-        public GetUserResponse(int _UserId, string _FullName, string _Email, ICollection<Models.File> _userFiles, ICollection<Models.Folder> _userFolders)
-        {
-            UserId = _UserId;
-            FullName = _FullName;
-            Email = _Email;
-            userFiles = _userFiles;
-            userFolders = _userFolders;
-        }
-    }
-    public record UserRootFolderResponse
-    {
-        public readonly bool success;
-        public readonly string message;
-        public readonly FolderDto folder;
-        public UserRootFolderResponse(bool _success, string _message, FolderDto _folder)
-        {
-            success = _success;
-            message = _message;
-            folder = _folder;
-        }
-    }
-
-    public record UserTrashResponse
-    {
-        public readonly bool success;
-        public readonly string message;
-        public readonly List<FileDto> trashFiles;
-        public readonly List<FolderDto> trashFolders;
-        public UserTrashResponse(bool _success, string _message, List<FileDto> _trashFiles, List<FolderDto> _trashFolders)
-        {
-            success= _success;
-            message = _message;
-            trashFiles = _trashFiles;
-            trashFolders = _trashFolders;
-        }
-    }
+    public record UserTrashResponse(bool success, string message, List<FileDto> trashFiles, List<FolderDto> trashFolders);
+    
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

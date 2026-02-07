@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\controllers\\usercontrollertests\\getusertrashtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\controllers\\usercontrollertests\\getusertrashtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|solutionrelative:mannys-cloud-backend\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend-tests\\controllers\\usercontrollertests\\getusertrashtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2941C902-D393-452B-8DBD-55CAD8B68161}|Mannys-Cloud-Backend-Tests\\Mannys-Cloud-Backend-Tests.csproj|solutionrelative:mannys-cloud-backend-tests\\controllers\\usercontrollertests\\getusertrashtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16CD43A-B455-4958-A410-5F795CB35C7E}|Mannys-Cloud-Backend\\Mannys-Cloud-Backend.csproj|c:\\users\\emman\\documents\\fullstack projects\\mannys-cloud\\mannys-cloud-backend\\mannys-cloud-backend\\util\\checkuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,22 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 233,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAkwJIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:57:10.045Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -61,19 +55,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetUserTrashTests.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
-              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
-              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
-              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwCMAAAAIAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T04:12:22.329Z",
+              "WhenOpened": "2026-01-28T03:57:10.045Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T03:13:13.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T00:24:37.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetUserTrashTests.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
+              "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
+              "ToolTip": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
+              "RelativeToolTip": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\GetUserTrashTests.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwCQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T04:12:22.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CheckUser.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend\\Util\\CheckUser.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend\\Util\\CheckUser.cs",
@@ -81,8 +113,7 @@
               "RelativeToolTip": "Mannys-Cloud-Backend\\Util\\CheckUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T04:04:48.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T04:04:48.624Z"
             },
             {
               "$type": "Document",
@@ -99,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UpdateUserTests.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\UpdateUserTests.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\UpdateUserTests.cs",
@@ -111,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DeleteUserTests.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\DeleteUserTests.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Controllers\\UserControllerTests\\DeleteUserTests.cs",
@@ -123,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "HTTPUserContext.cs",
               "DocumentMoniker": "C:\\Users\\emman\\Documents\\Fullstack Projects\\Mannys-Cloud\\Mannys-Cloud-Backend\\Mannys-Cloud-Backend-Tests\\Controllers\\Common\\HTTPUserContext.cs",
               "RelativeDocumentMoniker": "Mannys-Cloud-Backend-Tests\\Controllers\\Common\\HTTPUserContext.cs",

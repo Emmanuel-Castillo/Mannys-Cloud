@@ -13,21 +13,13 @@ using System.Text.RegularExpressions;
 
 namespace Mannys_Cloud_Backend.Controllers
 {
-    public record AuthResponse
-    {
-        public readonly bool success;
-        public readonly string message;
-        public readonly UserDto? userData;
-        public readonly string? token;
+    public record AuthResponse(
+    bool Success,
+    string Message,
+    UserDto? UserData,
+    string? Token
+);
 
-        public AuthResponse(bool _success, string _message, UserDto? _userData, string? _token)
-        {
-            success = _success;
-            message = _message;
-            userData = _userData;
-            token = _token;
-        }
-    }
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
